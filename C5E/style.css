@@ -44,19 +44,88 @@ header .heading { /* headerタグ内のheadingクラスにのみ反映される 
 
 .main {
   width: 840px; /* 横幅840px */
-  display: flex; /* Flexboxの利用 */
-  justify-content: center; /* 子要素の横並び・中央寄せ */
+  
   margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
 }
-
-.blog {
-  width: 600px; /* 横幅600px */
-  height: 1400px; /* 高さ1400px */
+#greenbox{
+  width: 800px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
-
-.sidebar {
-  width: 240px; /* 横幅240px */
-  height: 1400px; /* 高さ1400px */
+.item1 {
+  width: 200px;
+  height: 200px;
+  background-color: #e6ffe9;
+}
+.item2 {
+  width: 200px;
+  height: 200px;
+  background-color: #cdffd3;
+}
+.item3 {
+  width: 200px;
+  height: 200px;
+  background-color: #aeffbd;
+}
+.item4 {
+  width: 200px;
+  height: 200px;
+  background-color: #93ffab;
+}
+#yellowbox{
+  width: 800px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+.item5 {
+  width: 200px;
+  height: 200px;
+  background-color: #f3ffd8;
+}
+.item6 {
+  width: 200px;
+  height: 200px;
+  background-color: #edffbe;
+}
+.item7 {
+  width: 200px;
+  height: 200px;
+  background-color: #e9ffa5;
+}
+.item8 {
+  width: 200px;
+  height: 200px;
+  background-color: #e4ff8d;
+}
+#bluebox{
+  width: 800px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.item9 {
+  width: 200px;
+  height: 200px;
+  background-color: #d9e5ff;
+}
+.item10 {
+  width: 200px;
+  height: 200px;
+  background-color: #bad3ff;
+}
+.item11 {
+  width: 200px;
+  height: 200px;
+  background-color: #a4c6ff;
+}
+.item12 {
+  width: 200px;
+  height: 200px;
+  background-color: #8eb8ff;
 }
 
 footer {
