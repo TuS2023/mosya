@@ -18,7 +18,7 @@ body {
   text-align:center;
   margin-bottom: 30px;
   margin-top: 40px;
-  
+
 }
 
 .logo img {
@@ -27,13 +27,14 @@ body {
   width: 10%;
 }
 
-.header {
+.w-inner {
   width: 1200px;
   margin: 0 auto;
 }
 
 .header ul {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .header ul li {
@@ -50,4 +51,55 @@ body {
 
 .header ul li a {
   display: block;
+}
+
+.header_img {
+  text-align: center;
+}
+.container_service .service_block {
+  display: flex;
+  justify-content: space-between;
+}
+.container_service .service {
+  width:380px;
+  text-align: center;
+}
+.container_service h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.container_service .service img {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.container_service .service .ttl {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.container_service .service .explain {
+  margin-bottom: 20px;
+}
+
+.container_service .service a {
+  background: #79a1b1;
+  color: #fff;
+  padding: 15px 20px 12px;
+}
+.pp_link {
+  text-align: right;
+  margin: 20px;
+}
+.copy {
+  text-align: center;
+  background: #79a1b1;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 0 3px;
 }
