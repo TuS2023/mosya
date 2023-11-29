@@ -61,3 +61,32 @@ main {
   width: 100%;
   height: 50px;
 }
+
+@media screen and (max-width: 425px) {
+  
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    display: block;
+    margin: 50px auto;
+  }
+  .step-box {
+    margin-bottom: 30px;
+  }
+  
+  .num {
+    font-size: 10px;
+  }
+  .step-box p {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+  footer {
+    width: 100%;
+  }
+}
