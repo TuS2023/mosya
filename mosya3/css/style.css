@@ -33,6 +33,10 @@ header {
   line-height: 70px;
   width: 120px;
 }
+.burger-menu {
+  display: none; /* 初期状態では非表示 */
+  margin: 5px 0;
+}
 #mv {
   background-image: url(../img/mv.png);
   background-size: cover;
@@ -174,19 +178,19 @@ header {
   padding: 30px 0 90px 0;
   display: flex;
 }
-.my_image {
+#profile .my_image {
   background-image: url(../img/my-icon.jpg);
   border-radius: 50%;
   width: 250px;
   height: 250px;
   margin: 0 auto;
 }
-.sub-title {
+#profile .sub-title {
   font-size: 20px;
   color: #00000;
   margin-bottom: 5px;
 }
-.myskills .sub-title {
+#profile .myskills .sub-title {
   font-size: 20px;
   color: #00000;
   margin: 20px 0 5px 0;
@@ -203,7 +207,7 @@ header {
 #contact .container {
   text-align: center;
 }
-.contact-group {
+#contact .contact-group {
   display: flex;
   width: 800px;
   padding: 30px 0 90px 0;
@@ -213,21 +217,21 @@ header {
   width: 50%;
   
 }
-.left-title gb-1 {
+#contact .left-title gb-1 {
   font-size: 20px;
   margin-bottom: 5px;
 }
-.left-title gb-2 {
+#contact .left-title gb-2 {
   font-size: 20px;
   margin: 20px 5px 0 0;
 }
 
-.left-text {
+#contact .left-text {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-.left-text a {
+#contact .left-text a {
   color: #000000;
 }
 
@@ -237,22 +241,22 @@ header {
 }
 
 
-.right-title {
+#contact .right-title {
   font-size: 20px;
 }
-.right-icon .fa {
+#contact .right-icon .fa {
   font-size: 45px;
   margin-right: 20px;
 }
-.right-icon .fa:last-child {
+#contact .right-icon .fa:last-child {
   margin-right: 0;
 }
-.left-contact-content {
+#contact .left-contact-content {
   width: 130px;
   margin: 0 auto;
   text-align: left;
 }
-.right-contact-content {
+#contact .right-contact-content {
   width: 170px;
   margin: 0 auto;
   text-align: left;
@@ -264,4 +268,137 @@ header {
   height: 60px;
   text-align: center;
   line-height: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  header {
+    height: 50px;
+  }
+  .logo {
+    height: 50px;
+  }
+  .header_menu {
+    display: none; /* 画面幅が768px以下で非表示にする */
+  }
+  .burger-menu {
+    display: block; /* 画面幅が768px以下で表示する */
+  }
+  
+  #mv {
+    background-image: url(../img/code.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+  }
+  #mv .mv-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-top: 200px;
+  }
+  #mv .mv-text {
+    font-size: 18px;
+  }
+  
+  #portfolio .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #portfolio .main-title {
+    text-align: center;
+  }
+  #portfolio .main-text {
+    text-align: center;
+  }
+  #portfolio .image_group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #portfolio .image1 {
+    background-image: url(../img/websuku.png);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  #portfolio .image2 {
+    background-image: url(../img/webcamp.png);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  #portfolio .image3 {
+    background-image: url(../img/webcamp-mother.png);
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 250px;
+  }
+  #portfolio .image4 {
+    display: none;
+  }
+  #portfolio .image5 {
+    display: none;
+  }
+  #portfolio .image6 {
+    display: none;
+  }
+  #feature .container {
+    width: 90%;
+  }
+  #feature .item-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #profile .container {
+    width: 90%;
+    text-align: center;
+  }
+  #profile .profile_group {
+    flex-direction: column;
+    display: flex;
+  }
+  #profile .left-content {
+    width: 100%;
+  }
+  #profile .right-content {
+    width: 100%;
+    text-align: center;
+  }
+  #contact .container {
+    width: 100%;
+    text-align: center;
+  }
+  #contact .contact-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  #contact .left-content {
+    width: 100%;
+  }
+  #contact .right-content {
+    width: 100%;
+  }
+  #contact .left-contact-content {
+    
+    margin: 0 auto;
+    text-align: center;
+  }
+  #contact .right-contact-content {
+    
+    margin: 0 auto;
+    text-align: center;
+  }
+  
 }
