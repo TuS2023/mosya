@@ -128,3 +128,8 @@ header {
 .heading h2 {
   font-weight: normal;
 }
+
+.lesson {
+  width: 25%;
+  float: left;
+}
